@@ -1,0 +1,23 @@
+site_name: Build a Docs Site wih Mkdocs
+
+nav:
+  - Home: index.md
+  - Installation: Installation.md
+  - Create New Page: Creating-pages.md
+  - Customize Theme: Customizing-theme.md
+  - Deploy Site: Deployment.md
+  - FAQS: FAQs.md
+
+theme:
+  name: material
+  palette:
+    primary: 'indigo' 
+    accent: 'indigo'
+  font:
+    text: Open Sans
+    code: Fira Code
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
