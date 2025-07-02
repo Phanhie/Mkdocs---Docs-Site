@@ -504,13 +504,13 @@
 <h1 id="deploy-your-mkdocs-site-to-github-pages"><strong>Deploy Your MkDocs Site to GitHub Pages</strong></h1>
 <hr />
 <p>Once you've built your documentation, you'll want to share it with the world.</p>
-<p>Publishing your site online makes it accessible to everyone and GitHub Pages is a fantastic, free option for hosting your MkDocs site directly from your project's code.</p>
+<p>Publishing your site online makes it accessible to everyone, and GitHub Pages is a fantastic, free option for hosting your MkDocs site directly from your project's code.</p>
 <p>Let's walk through the steps involved in this process.</p>
 <h2 id="step-1-create-a-github-repository"><strong>Step 1: Create a GitHub Repository</strong></h2>
 <p>First, you need a place on GitHub for your project.</p>
 <ol>
 <li>Go to <code>github.com</code> and log in.</li>
-<li>Click the <strong>New</strong> button (or the <code>+</code> sign) to create a new repository.</li>
+<li>Click the <strong>New</strong> button to create a new repository.</li>
 <li>Give your repository a name, like <code>my-docs-site</code> (it's often good to match your project folder name).</li>
 <li>
 <p>Choose <strong>Public</strong> so your site can be seen and click <strong>Create repository</strong>.</p>
@@ -518,10 +518,12 @@
 </li>
 </ol>
 <h2 id="step-2-initialize-git-in-your-project"><strong>Step 2: Initialize Git in Your Project</strong></h2>
-<p>TO connect your local MkDocs project to your new GitHub repository: 
-1. Open your Terminal or Command Prompt
-2. Navigate to your MkDocs project folder ( <code>cd my-new-docs</code>)
-3. Run these commands one after the other:</p>
+<p>To connect your local MkDocs project to your new GitHub repository: </p>
+<ol>
+<li>Open your Terminal or Command Prompt</li>
+<li>Navigate to your MkDocs project folder ( <code>cd my-new-docs</code>)</li>
+<li>Run these commands one after the other:</li>
+</ol>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>init<span class="w">   </span>
 
 git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;Repo-Url&gt;
@@ -538,10 +540,12 @@ git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span
 <p>In your project folder, type:</p>
 <div class="highlight"><pre><span></span><code>mkdocs<span class="w"> </span>gh-deploy
 </code></pre></div>
-<p>This command does a few things: 
-- It builds your entire site (just like <code>mkdocs build</code>). 
-- Then it pushes the built website files to a special branch on your GitHub repository called <code>gh-pages</code>. 
-- GitHub Pages then uses this branch to serve your website.</p>
+<p>This command does a few things: </p>
+<ul>
+<li>It builds your entire site (just like <code>mkdocs build</code>). </li>
+<li>Then it pushes the built website files to a special branch on your GitHub repository called <code>gh-pages</code>. </li>
+<li>GitHub Pages then uses this branch to serve your website.</li>
+</ul>
 <h2 id="where-to-view-your-site"><strong>Where to View Your Site</strong></h2>
 <p>After <code>mkdocs gh-deploy</code> finishes, your site should be live. It usually takes a minute or two for GitHub Pages to update.</p>
 <p>Your site's address will be in this format:</p>
