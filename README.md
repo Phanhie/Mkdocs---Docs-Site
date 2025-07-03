@@ -1,18 +1,15 @@
 # MkDocs — Docs Site
-
 This is the documentation site for my technical writing practice, built with [MkDocs](https://www.mkdocs.org/) and styled using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
 **Live Site:**  
 https://phanhie.github.io/Mkdocs---Docs-Site/
 
 ## Built With
-
 - MkDocs
 - Material for MkDocs theme
 - Markdown
 
 ## Local Setup
-
 Clone the repo:
 
 ```bash
@@ -32,7 +29,7 @@ Run the site locally:
 mkdocs serve
 ```
 
-## 🚀 Deployment
+## Deployment
 
 This site is deployed via GitHub Pages using:
 
